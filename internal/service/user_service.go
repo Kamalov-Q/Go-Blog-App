@@ -13,7 +13,7 @@ type UserService struct {
 func NewUserService(repo *repository.UserRepository) *UserService {
 	return &UserService{repo: repo}
 }
-
+ 
 func (s *UserService) CreateUser(req *models.CreateUserRequest) (*models.User, error) {
 
 	// Validate email uniqueness
